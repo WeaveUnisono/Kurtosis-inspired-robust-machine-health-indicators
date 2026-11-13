@@ -10,11 +10,9 @@ Kurtosis is a statistical measure describing the shape of a probability distribu
 
 The classical moment-based estimator is defined as
 
-\[
-K = \frac{m_4}{m_2^2},
-\]
+K = m4 / m2^2,
 
-where \(m_2\) and \(m_4\) are the second and fourth central sample moments.
+where \(m2\) and \(m4\) are the second and fourth central sample moments.
 
 Although widely used, classical kurtosis can be highly sensitive to outliers and extreme observations. This motivates the use of robust alternatives based on quantiles, order statistics, and L-moments.
 
@@ -162,15 +160,12 @@ K = rk_lq_kurtosis(x, p, alpha);
 
 The parameters must satisfy:
 
-\[
-0 \leq p \leq 0.5,
-\qquad
-0 \leq \alpha \leq 0.5.
-\]
+0 ≤ p ≤ 0.5,
+0 ≤ α ≤ 0.5.
 
 The predefined variants correspond to:
 
-| Estimator | \(p\) | \(\alpha\) |
+| Estimator | \(p\) | \(α\) |
 |---|---:|---:|
 | LQ-median | 0 | 0.5 |
 | LQ-trimean | 0.25 | 0.25 |
